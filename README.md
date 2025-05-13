@@ -1,4 +1,4 @@
-# DoodleDogs
+# 🐩 DoodleDogs
 
 A complete puppy adoption management system built using C#.
 
