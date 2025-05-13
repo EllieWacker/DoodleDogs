@@ -1,0 +1,13 @@
+.parent-card {
+    width: 25em !important;
+}
+
+.parent-card img {
+    height: 35% !important;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: auto;
+    }
+}

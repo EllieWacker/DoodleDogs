@@ -1,0 +1,51 @@
+C:\csharp 2\BoatRental\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+C:\csharp 2\BoatRental\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\csharp 2\BoatRental\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\csharp 2\BoatRental\DataAccessLayer\bin\Debug\net8.0\DataAccessInterfaces.dll
+C:\csharp 2\BoatRental\DataAccessLayer\bin\Debug\net8.0\DataDomain.dll
+C:\csharp 2\BoatRental\DataAccessLayer\bin\Debug\net8.0\DataAccessInterfaces.pdb
+C:\csharp 2\BoatRental\DataAccessLayer\bin\Debug\net8.0\DataDomain.pdb
+C:\csharp 2\BoatRental\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\csharp 2\BoatRental\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\csharp 2\BoatRental\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\csharp 2\BoatRental\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+C:\csharp 2\BoatRental\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\csharp 2\BoatRental\DataAccessLayer\obj\Debug\net8.0\DataAcce.E67BD773.Up2Date
+C:\csharp 2\BoatRental\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+C:\csharp 2\BoatRental\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+C:\csharp 2\BoatRental\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+C:\csharp 2\BoatRental\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\csharp 2\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+C:\csharp 2\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\csharp 2\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\csharp 2\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataAccessInterfaces.dll
+C:\csharp 2\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataDomain.dll
+C:\csharp 2\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataAccessInterfaces.pdb
+C:\csharp 2\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataDomain.pdb
+C:\csharp 2\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\csharp 2\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\csharp 2\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\csharp 2\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+C:\csharp 2\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\csharp 2\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAcce.E67BD773.Up2Date
+C:\csharp 2\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+C:\csharp 2\DogBreeder\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+C:\csharp 2\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+C:\csharp 2\DogBreeder\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\.Net3\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+C:\.Net3\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\.Net3\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\.Net3\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataAccessInterfaces.dll
+C:\.Net3\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataDomain.dll
+C:\.Net3\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataAccessInterfaces.pdb
+C:\.Net3\DogBreeder\DataAccessLayer\bin\Debug\net8.0\DataDomain.pdb
+C:\.Net3\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\.Net3\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\.Net3\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\.Net3\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+C:\.Net3\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\.Net3\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAcce.E67BD773.Up2Date
+C:\.Net3\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+C:\.Net3\DogBreeder\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+C:\.Net3\DogBreeder\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+C:\.Net3\DogBreeder\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll

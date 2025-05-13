@@ -1,0 +1,66 @@
+﻿@model IEnumerable<DataDomain.FatherDog>
+
+@{
+    ViewData["Title"] = "FatherIndex";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/parent.css" asp-append-version="true" />
+}
+
+<h1>Father Dogs</h1>
+
+<div class="container py-4">
+    <div class="row g-4 father-div">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 shadow-sm parent-card">
+                    <img src="~/Photos/@item.Image" class="card-img-top" alt="Father dog Image" style="height: 200px; object-fit: cover;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">@item.FatherDogID</h5>
+                        <p class="card-text"><strong>Breed:</strong> @item.BreedID</p>
+                        <p class="card-text"><strong>Personality:</strong> @item.Personality</p>
+                        <p class="card-text"><strong>Description:</strong> @item.Description</p>
+                        <p class="card-text">
+                            <strong>Energy Level:</strong>
+                            <span class="badge
+                                @(item.EnergyLevel == "Low" ? "bg-success" :
+                                  item.EnergyLevel == "Medium" ? "bg-warning" :
+                                  item.EnergyLevel == "Full of Energy" ? "bg-danger" :"bg-secondary")">
+                                @item.EnergyLevel
+                            </span>
+                        </p>
+                        <p class="card-text">
+                            <strong>Barking Level:</strong>
+                            <span class="badge
+                                @(item.BarkingLevel == "Low" ? "bg-success" :
+                                  item.BarkingLevel == "Medium" ? "bg-warning" :
+                                  item.BarkingLevel == "High" ? "bg-danger" :"bg-secondary")">
+                                @item.BarkingLevel
+                            </span>
+                        </p>
+                        <p class="card-text">
+                            <strong>Trainability:</strong>
+                            <span class="badge
+                                @(item.Trainability == "Quick to learn" ? "bg-success" :
+                                  item.Trainability == "Moderate" ? "bg-warning" :
+                                  item.Trainability == "Slow to learn" ? "bg-danger" :"bg-secondary")">
+                                @item.Trainability
+                            </span>
+                        </p>
+                    </div>
+
+                    @* @if (item.Adopted == false) *@
+                    @* { *@
+                    @*     <div class="card-footer text-center"> *@
+                    @*         <a asp-action="Adopt" asp-route-id="@item.MotherDogID" class="btn btn-sm btn-outline-primary">Adopt</a> *@
+                    @*         <a asp-action="Details" asp-route-id="@item.MotherDogID" class="btn btn-sm btn-outline-info">Details</a> *@
+                    @*     </div> *@
+                    @* } *@
+                </div>
+            </div>
+        }
+    </div>
+</div>

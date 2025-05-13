@@ -1,0 +1,55 @@
+﻿@model IEnumerable<DataDomain.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/tableStyles.css" asp-append-version="true" />
+}
+
+<h1>Users</h1>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr class="greenTr">
+                <th>
+                   Given Name
+                </th>
+                <th>
+                    Family Name
+                </th>
+                <th>
+                   Phone Number
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Active)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td class="text-capitalize">
+                    @Html.DisplayFor(modelItem => item.GivenName)
+                </td>
+                <td class="text-capitalize">
+                    @Html.DisplayFor(modelItem => item.FamilyName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Active)
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>

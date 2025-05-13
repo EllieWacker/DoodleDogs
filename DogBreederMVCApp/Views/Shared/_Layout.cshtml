@@ -1,0 +1,146 @@
+﻿@using DataDomain
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DogBreederMVCApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @RenderSection("Styles", false)  
+    <link rel="stylesheet" href="~/DogBreederMVCApp.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/Photos/logo.png" class="logo"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Application" asp-action="Create">Create Application</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="puppyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                View Puppies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="puppyDropdown">
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Dog" asp-action="Index" asp-route-breedID="Mini Aussiedoodle">Aussiedoodle Puppies</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Dog" asp-action="Index" asp-route-breedID="Cockapoo">Cockapoo Puppies</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Dog" asp-action="Index" asp-route-breedID="Mini Goldendoodle">Goldendoodle Puppies</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="parentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                View Parent Dogs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="parentDropdown">
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Parent" asp-action="MotherIndex">Mother Dogs</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Parent" asp-action="FatherIndex">Father Dogs</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="litterDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Litters
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="litterDropdown">
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Litter" asp-action="Details" asp-route-litterID="AussieLit1" asp-route-motherDogID="Clemmy" asp-route-fatherDogID="Harold">Aussiedoodle Litter 1</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Litter" asp-action="Details" asp-route-litterID="AussieLit2" asp-route-motherDogID="Clemmy" asp-route-fatherDogID="Harold">Aussiedoodle Litter 2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Litter" asp-action="Details" asp-route-litterID="AussieLit3" asp-route-motherDogID="Clemmy" asp-route-fatherDogID="Finn">Aussiedoodle Litter 3</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Litter" asp-action="Details" asp-route-litterID="GoldenLit1" asp-route-motherDogID="Mya" asp-route-fatherDogID="Harold">Goldendoodle Litter 1</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Litter" asp-action="Details" asp-route-litterID="GoldenLit2" asp-route-motherDogID="Mya" asp-route-fatherDogID="Harold">Goldendoodle Litter 2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Litter" asp-action="Details" asp-route-litterID="GoldenLit3" asp-route-motherDogID="Mya" asp-route-fatherDogID="Finn">Goldendoodle Litter 3</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Litter" asp-action="Details" asp-route-litterID="CockerLit1" asp-route-motherDogID="Rosie" asp-route-fatherDogID="Harold">Cockapoo Litter 1</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Litter" asp-action="Details" asp-route-litterID="CockerLit2" asp-route-motherDogID="Rosie" asp-route-fatherDogID="Harold">Cockapoo Litter 2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Litter" asp-action="Details" asp-route-litterID="CockerLit3" asp-route-motherDogID="Rosie" asp-route-fatherDogID="Finn">Cockapoo Litter 3</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                ADMIN
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="adminDropdown">
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="User" asp-action="Index">Users</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Application" asp-action="Index">Applications</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Parent" asp-action="BothBasicIndex">Parent Dogs</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Dog" asp-action="IndexBasic">Puppies</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Litter" asp-action="IndexBasic">Litters</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Adoption" asp-action="Index">Adoptions</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container" style="flex-direction: row">
+            &copy; 2025 - DogBreederMVCApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿@model DogBreederMVCApp.Models.PuppyAdoptionsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Your adopted puppies</h1>
+
+<div class="container py-4">
+    <div class="row g-4">
+        @if(Model.Puppies.Count == 0){
+            <div style="display:flex; align-items: center; flex-direction: column">
+                <h2 style="padding-left: 0">You don't have any adopted puppies. Fill out a puppy application to adopt one.</h2>
+                <img src="~/Photos/sadPuppy.png" class="card-img-top" alt="Sad Puppy Image" style="width: 40em">
+            </div>
+        }
+        else
+        {
+            @foreach (var item in Model.Puppies)
+            {
+                var adoption = Model.Adoptions.FirstOrDefault(a => a.PuppyID == item.PuppyID);
+                var litter = Model.Litters.FirstOrDefault(litter => litter.LitterID == item.LitterID);
+                // responsive div
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" style="width: 17em">
+                    @* a bootstrap card div style *@
+                    <div class="card h-100 shadow-sm">
+                        <img src="~/Photos/@item.Image" class="card-img-top" alt="Puppy Image" style="height: 230px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Puppy #@item.PuppyID</h5>
+                            <p class="card-text"><strong>Litter:</strong> @item.LitterID</p>
+                            <p class="card-text"><strong>Gender:</strong> @item.Gender</p>
+                            <p class="card-text"><strong>Go Home Date:</strong> @litter.GoHomeDate.ToShortDateString()</p>
+                            <p class="card-text">
+                                <strong>Status:</strong>
+                                <span class="badge 
+                                   @(adoption.Status == "In Progress" ? "bg-warning" :
+                                     adoption.Status == "Completed" ? "bg-success" :
+                                     adoption.Status == "Adopted" ? "bg-success" :
+                                     "bg-danger")">
+                                    @adoption.Status
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

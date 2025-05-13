@@ -1,0 +1,124 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\.Net3\\DogBreeder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD900C3-2E19-4486-A546-B35EC29597FF}|WpfPresentation\\WpfPresentation.csproj|c:\\.net3\\dogbreeder\\wpfpresentation\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CD900C3-2E19-4486-A546-B35EC29597FF}|WpfPresentation\\WpfPresentation.csproj|solutionrelative:wpfpresentation\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD900C3-2E19-4486-A546-B35EC29597FF}|WpfPresentation\\WpfPresentation.csproj|c:\\.net3\\dogbreeder\\wpfpresentation\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6CD900C3-2E19-4486-A546-B35EC29597FF}|WpfPresentation\\WpfPresentation.csproj|solutionrelative:wpfpresentation\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F60C6B1A-E350-4305-8AF2-858CABDDA560}|DogBreederMVCApp\\DogBreederMVCApp.csproj|c:\\.net3\\dogbreeder\\dogbreedermvcapp\\controllers\\dogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F60C6B1A-E350-4305-8AF2-858CABDDA560}|DogBreederMVCApp\\DogBreederMVCApp.csproj|solutionrelative:dogbreedermvcapp\\controllers\\dogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F60C6B1A-E350-4305-8AF2-858CABDDA560}|DogBreederMVCApp\\DogBreederMVCApp.csproj|c:\\.net3\\dogbreeder\\dogbreedermvcapp\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F60C6B1A-E350-4305-8AF2-858CABDDA560}|DogBreederMVCApp\\DogBreederMVCApp.csproj|solutionrelative:dogbreedermvcapp\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F60C6B1A-E350-4305-8AF2-858CABDDA560}|DogBreederMVCApp\\DogBreederMVCApp.csproj|c:\\.net3\\dogbreeder\\dogbreedermvcapp\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F60C6B1A-E350-4305-8AF2-858CABDDA560}|DogBreederMVCApp\\DogBreederMVCApp.csproj|solutionrelative:dogbreedermvcapp\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F60C6B1A-E350-4305-8AF2-858CABDDA560}|DogBreederMVCApp\\DogBreederMVCApp.csproj|c:\\.net3\\dogbreeder\\dogbreedermvcapp\\views\\application\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F60C6B1A-E350-4305-8AF2-858CABDDA560}|DogBreederMVCApp\\DogBreederMVCApp.csproj|solutionrelative:dogbreedermvcapp\\views\\application\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\.Net3\\DogBreeder\\WpfPresentation\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfPresentation\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\.Net3\\DogBreeder\\WpfPresentation\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WpfPresentation\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAIA1wKUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T18:20:56.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\.Net3\\DogBreeder\\WpfPresentation\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfPresentation\\MainWindow.xaml",
+              "ToolTip": "C:\\.Net3\\DogBreeder\\WpfPresentation\\MainWindow.xaml",
+              "RelativeToolTip": "WpfPresentation\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-13T18:19:25.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DogController.cs",
+              "DocumentMoniker": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\Controllers\\DogController.cs",
+              "RelativeDocumentMoniker": "DogBreederMVCApp\\Controllers\\DogController.cs",
+              "ToolTip": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\Controllers\\DogController.cs",
+              "RelativeToolTip": "DogBreederMVCApp\\Controllers\\DogController.cs",
+              "ViewState": "AgIAAFUBAAAAAAAAAAAAACoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T19:23:14.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\Views\\Application\\Index.cshtml",
+              "RelativeDocumentMoniker": "DogBreederMVCApp\\Views\\Application\\Index.cshtml",
+              "ToolTip": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\Views\\Application\\Index.cshtml",
+              "RelativeToolTip": "DogBreederMVCApp\\Views\\Application\\Index.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAADYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-08T15:54:52.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "DogBreederMVCApp\\Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "DogBreederMVCApp\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-08T15:58:15.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationController.cs",
+              "DocumentMoniker": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\Controllers\\ApplicationController.cs",
+              "RelativeDocumentMoniker": "DogBreederMVCApp\\Controllers\\ApplicationController.cs",
+              "ToolTip": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\Controllers\\ApplicationController.cs",
+              "RelativeToolTip": "DogBreederMVCApp\\Controllers\\ApplicationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T15:51:38.232Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

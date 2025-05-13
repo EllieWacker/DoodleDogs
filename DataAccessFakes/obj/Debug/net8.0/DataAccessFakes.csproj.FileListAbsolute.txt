@@ -1,0 +1,51 @@
+C:\csharp 2\BoatRental\DataAccessFakes\bin\Debug\net8.0\DataAccessFakes.deps.json
+C:\csharp 2\BoatRental\DataAccessFakes\bin\Debug\net8.0\DataAccessFakes.dll
+C:\csharp 2\BoatRental\DataAccessFakes\bin\Debug\net8.0\DataAccessFakes.pdb
+C:\csharp 2\BoatRental\DataAccessFakes\bin\Debug\net8.0\DataAccessInterfaces.dll
+C:\csharp 2\BoatRental\DataAccessFakes\bin\Debug\net8.0\DataDomain.dll
+C:\csharp 2\BoatRental\DataAccessFakes\bin\Debug\net8.0\DataAccessInterfaces.pdb
+C:\csharp 2\BoatRental\DataAccessFakes\bin\Debug\net8.0\DataDomain.pdb
+C:\csharp 2\BoatRental\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.csproj.AssemblyReference.cache
+C:\csharp 2\BoatRental\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.GeneratedMSBuildEditorConfig.editorconfig
+C:\csharp 2\BoatRental\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.AssemblyInfoInputs.cache
+C:\csharp 2\BoatRental\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.AssemblyInfo.cs
+C:\csharp 2\BoatRental\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.csproj.CoreCompileInputs.cache
+C:\csharp 2\BoatRental\DataAccessFakes\obj\Debug\net8.0\DataAcce.243E81C0.Up2Date
+C:\csharp 2\BoatRental\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.dll
+C:\csharp 2\BoatRental\DataAccessFakes\obj\Debug\net8.0\refint\DataAccessFakes.dll
+C:\csharp 2\BoatRental\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.pdb
+C:\csharp 2\BoatRental\DataAccessFakes\obj\Debug\net8.0\ref\DataAccessFakes.dll
+C:\csharp 2\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataAccessFakes.deps.json
+C:\csharp 2\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataAccessFakes.dll
+C:\csharp 2\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataAccessFakes.pdb
+C:\csharp 2\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataAccessInterfaces.dll
+C:\csharp 2\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataDomain.dll
+C:\csharp 2\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataAccessInterfaces.pdb
+C:\csharp 2\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataDomain.pdb
+C:\csharp 2\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.csproj.AssemblyReference.cache
+C:\csharp 2\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.GeneratedMSBuildEditorConfig.editorconfig
+C:\csharp 2\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.AssemblyInfoInputs.cache
+C:\csharp 2\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.AssemblyInfo.cs
+C:\csharp 2\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.csproj.CoreCompileInputs.cache
+C:\csharp 2\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAcce.243E81C0.Up2Date
+C:\csharp 2\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.dll
+C:\csharp 2\DogBreeder\DataAccessFakes\obj\Debug\net8.0\refint\DataAccessFakes.dll
+C:\csharp 2\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.pdb
+C:\csharp 2\DogBreeder\DataAccessFakes\obj\Debug\net8.0\ref\DataAccessFakes.dll
+C:\.Net3\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataAccessFakes.deps.json
+C:\.Net3\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataAccessFakes.dll
+C:\.Net3\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataAccessFakes.pdb
+C:\.Net3\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataAccessInterfaces.dll
+C:\.Net3\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataDomain.dll
+C:\.Net3\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataAccessInterfaces.pdb
+C:\.Net3\DogBreeder\DataAccessFakes\bin\Debug\net8.0\DataDomain.pdb
+C:\.Net3\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.csproj.AssemblyReference.cache
+C:\.Net3\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.GeneratedMSBuildEditorConfig.editorconfig
+C:\.Net3\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.AssemblyInfoInputs.cache
+C:\.Net3\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.AssemblyInfo.cs
+C:\.Net3\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.csproj.CoreCompileInputs.cache
+C:\.Net3\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAcce.243E81C0.Up2Date
+C:\.Net3\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.dll
+C:\.Net3\DogBreeder\DataAccessFakes\obj\Debug\net8.0\refint\DataAccessFakes.dll
+C:\.Net3\DogBreeder\DataAccessFakes\obj\Debug\net8.0\DataAccessFakes.pdb
+C:\.Net3\DogBreeder\DataAccessFakes\obj\Debug\net8.0\ref\DataAccessFakes.dll

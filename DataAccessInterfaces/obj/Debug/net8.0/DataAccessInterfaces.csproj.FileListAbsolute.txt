@@ -1,0 +1,45 @@
+C:\csharp 2\BoatRental\DataAccessInterfaces\bin\Debug\net8.0\DataAccessInterfaces.deps.json
+C:\csharp 2\BoatRental\DataAccessInterfaces\bin\Debug\net8.0\DataAccessInterfaces.dll
+C:\csharp 2\BoatRental\DataAccessInterfaces\bin\Debug\net8.0\DataAccessInterfaces.pdb
+C:\csharp 2\BoatRental\DataAccessInterfaces\bin\Debug\net8.0\DataDomain.dll
+C:\csharp 2\BoatRental\DataAccessInterfaces\bin\Debug\net8.0\DataDomain.pdb
+C:\csharp 2\BoatRental\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.csproj.AssemblyReference.cache
+C:\csharp 2\BoatRental\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\csharp 2\BoatRental\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.AssemblyInfoInputs.cache
+C:\csharp 2\BoatRental\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.AssemblyInfo.cs
+C:\csharp 2\BoatRental\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.csproj.CoreCompileInputs.cache
+C:\csharp 2\BoatRental\DataAccessInterfaces\obj\Debug\net8.0\DataAcce.17E011A7.Up2Date
+C:\csharp 2\BoatRental\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.dll
+C:\csharp 2\BoatRental\DataAccessInterfaces\obj\Debug\net8.0\refint\DataAccessInterfaces.dll
+C:\csharp 2\BoatRental\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.pdb
+C:\csharp 2\BoatRental\DataAccessInterfaces\obj\Debug\net8.0\ref\DataAccessInterfaces.dll
+C:\csharp 2\DogBreeder\DataAccessInterfaces\bin\Debug\net8.0\DataAccessInterfaces.deps.json
+C:\csharp 2\DogBreeder\DataAccessInterfaces\bin\Debug\net8.0\DataAccessInterfaces.dll
+C:\csharp 2\DogBreeder\DataAccessInterfaces\bin\Debug\net8.0\DataAccessInterfaces.pdb
+C:\csharp 2\DogBreeder\DataAccessInterfaces\bin\Debug\net8.0\DataDomain.dll
+C:\csharp 2\DogBreeder\DataAccessInterfaces\bin\Debug\net8.0\DataDomain.pdb
+C:\csharp 2\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.csproj.AssemblyReference.cache
+C:\csharp 2\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\csharp 2\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.AssemblyInfoInputs.cache
+C:\csharp 2\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.AssemblyInfo.cs
+C:\csharp 2\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.csproj.CoreCompileInputs.cache
+C:\csharp 2\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAcce.17E011A7.Up2Date
+C:\csharp 2\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.dll
+C:\csharp 2\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\refint\DataAccessInterfaces.dll
+C:\csharp 2\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.pdb
+C:\csharp 2\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\ref\DataAccessInterfaces.dll
+C:\.Net3\DogBreeder\DataAccessInterfaces\bin\Debug\net8.0\DataAccessInterfaces.deps.json
+C:\.Net3\DogBreeder\DataAccessInterfaces\bin\Debug\net8.0\DataAccessInterfaces.dll
+C:\.Net3\DogBreeder\DataAccessInterfaces\bin\Debug\net8.0\DataAccessInterfaces.pdb
+C:\.Net3\DogBreeder\DataAccessInterfaces\bin\Debug\net8.0\DataDomain.dll
+C:\.Net3\DogBreeder\DataAccessInterfaces\bin\Debug\net8.0\DataDomain.pdb
+C:\.Net3\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.csproj.AssemblyReference.cache
+C:\.Net3\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\.Net3\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.AssemblyInfoInputs.cache
+C:\.Net3\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.AssemblyInfo.cs
+C:\.Net3\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.csproj.CoreCompileInputs.cache
+C:\.Net3\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAcce.17E011A7.Up2Date
+C:\.Net3\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.dll
+C:\.Net3\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\refint\DataAccessInterfaces.dll
+C:\.Net3\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\DataAccessInterfaces.pdb
+C:\.Net3\DogBreeder\DataAccessInterfaces\obj\Debug\net8.0\ref\DataAccessInterfaces.dll

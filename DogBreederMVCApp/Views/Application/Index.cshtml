@@ -1,0 +1,94 @@
+﻿@model IEnumerable<DataDomain.Application>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/tableStyles.css" asp-append-version="true" />
+}
+
+<h1>All Applications</h1>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr class="greenTr">
+                <th>
+                    Full Name
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Age)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Renting)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Yard)
+                </th>
+                <th>
+                    Desired Breed
+                </th>
+                <th>
+                    Desired Gender
+                </th>
+                <th>
+                    Preferred Form of Contact
+                </th>
+                <th>
+                    Status
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Comment)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td class="text-capitalize">
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Renting)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Yard)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DesiredBreed)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DesiredGender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PreferredContact)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Comment)
+                </td>
+                @if (item.Status == false)
+                {
+                    <td class="d-flex justify-content-center gap-2">
+                            @Html.ActionLink("Approve", "Approve", new { id = item.ApplicationID }, new { @class = "btn btn-sm btn-outline-success" })
+                    </td>
+                }else{
+                    <td></td>
+                }
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>

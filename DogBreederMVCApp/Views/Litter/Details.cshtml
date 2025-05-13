@@ -1,0 +1,48 @@
+﻿@model LitterDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/litterDetail.css" asp-append-version="true" />
+}
+
+<h1>Litter @Model.Litter.LitterID</h1>
+
+<div id="container">
+    <hr />
+    <div id="divBoth">
+        <div id="divImg">
+            <img class="imgBorder" src="~/Photos/@Model.FatherDog.Image" class="parent card-img-top" alt="Father Dog Image" style="margin-bottom: 1em; object-fit: cover;">
+            <img id="imgLitter" src="~/Photos/@Model.Litter.Image" class="card-img-top" alt="Litter Image" style="margin-bottom: 1em; object-fit: cover;">
+            <img class="imgBorder" src="~/Photos/@Model.MotherDog.Image" class="parent card-img-top" alt="Mother Dog Image" style="margin-bottom: 1em; object-fit: cover;">
+        </div>
+
+        <div id="divText" class="d-flex justify-content-center">
+            <dl class="row text-center">
+                <dd class = "txtLitter col-sm-10">
+                   <b>Father Dog Name:  </b> @Html.DisplayFor(model => model.FatherDog.FatherDogID)
+                </dd>
+                <dd class="txtLitter col-sm-10">
+                    <b>Mother Dog Name:  </b> @Html.DisplayFor(model => model.MotherDog.MotherDogID)
+                </dd>
+                <dd class="txtLitter col-sm-10">
+                    <b>Date of Birth:  </b> @Model.Litter.DateOfBirth.ToString("yyyy-MM-dd")
+                </dd>
+                <dd class="txtLitter col-sm-10">
+                    <b>Go Home Date:  </b> @Model.Litter.GoHomeDate.ToString("yyyy-MM-dd")
+                </dd>
+                <dd class="txtLitter col-sm-10">
+                    <b>Number of Puppies:  </b> @Html.DisplayFor(model => model.Litter.NumberPuppies)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+@if(ViewBag.IsAdmin == true)
+{
+    <div>
+        <a asp-action="IndexBasic" class="btn btn-sm btn-outline-primary" style="margin-top: 1em">Back to List</a>
+    </div>
+}
+

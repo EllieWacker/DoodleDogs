@@ -1,0 +1,25 @@
+.container{
+    flex-direction:column;
+}
+
+.row{
+    justify-content:center;
+}
+
+.col-md-4 {
+    background-color: #787474;
+    padding: 2em;
+}
+
+.bottom-button {
+    width: 7em !important;
+    margin: 1em;
+}
+
+.text-danger {
+    color: rgb(253 114 114) !important;
+}
+
+.top-text{
+    color: white;
+}

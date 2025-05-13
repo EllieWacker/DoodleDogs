@@ -1,0 +1,71 @@
+﻿@model DataDomain.Application
+
+@{
+    ViewData["Title"] = "Approve";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/litterDetail.css" asp-append-version="true" />
+}
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<h1>Approve</h1>
+
+<h4 style="margin-bottom: 2em; width: 900px">Would you like to approve this application? Doing so will give the user the role of adopter and allow them to adopt whatever puppy they would like.</h4>
+
+<div id="applicationContainer">
+    <hr />
+    <div id="divText" class="d-flex justify-content-center">
+        <dl class="row text-center">
+            <dd class = "col-sm-10">
+                <b>Full Name: </b>@Html.DisplayFor(model => model.FullName)
+            </dd>
+            <dd class = "col-sm-10">
+                <b>Age: </b>@Html.DisplayFor(model => model.Age)
+            </dd>
+            <dd class = "col-sm-10">
+                <b>Renting: </b>@Html.DisplayFor(model => model.Renting)
+            </dd>
+            <dd class = "col-sm-10">
+                <b>Yard: </b>@Html.DisplayFor(model => model.Yard)
+            </dd>
+            <dd class = "col-sm-10">
+                <b>Desired Breed: </b>@Html.DisplayFor(model => model.DesiredBreed)
+            </dd>
+        </dl>
+        <dl class="row text-center">
+            <dd class = "col-sm-10">
+                <b>Desired Gender: </b>@Html.DisplayFor(model => model.DesiredGender)
+            </dd>
+            <dd class = "col-sm-10">
+                <b>Preferred Contact: </b>@Html.DisplayFor(model => model.PreferredContact)
+            </dd>
+            <dd class="col-sm-10">
+                <b>Status: </b>@Html.DisplayFor(model => model.Status)
+            </dd>
+            <dd class = "col-sm-10">
+                <b>Comment: </b>@Html.DisplayFor(model => model.Comment)
+            </dd>
+        </dl>
+     </div>
+</div>
+<form asp-action="Approve" style="display: flex; justify-content: center;">
+        @Html.HiddenFor(model => model.ApplicationID)
+        @Html.HiddenFor(model => model.UserID)
+        @Html.HiddenFor(model => model.FullName)
+        @Html.HiddenFor(model => model.Age)
+        @Html.HiddenFor(model => model.Renting)
+        @Html.HiddenFor(model => model.Yard)
+        @Html.HiddenFor(model => model.DesiredGender)
+        @Html.HiddenFor(model => model.DesiredBreed)
+        @Html.HiddenFor(model => model.PreferredContact)
+        @Html.HiddenFor(model => model.Status)
+        @Html.HiddenFor(model => model.Comment)
+        <input type="submit" value="Approve" class="btn btn-sm btn-outline-success" style="margin: 1em" />
+    <a asp-action="Index" class="btn btn-sm btn-outline-primary" style="margin: 1em">Back to List</a>
+    </form>
+

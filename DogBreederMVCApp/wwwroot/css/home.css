@@ -1,0 +1,20 @@
+﻿.welcome-div {
+    display: flex;
+    background-color: #629c88;
+    width: 50em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.featurette{
+    margin-top: 3em;
+}
+
+#home-paragraph{
+    margin: 1em;
+}
+
+img {
+    border: solid, white, .2em;
+}

@@ -1,0 +1,67 @@
+﻿@model DogBreederMVCApp.Models.AdoptionUserViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/tableStyles.css" asp-append-version="true" />
+}
+
+<h1>Adoptions</h1>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr class="greenTr">
+                <th>
+                    Adoption Number
+                </th>
+                <th>
+                    Adopter Name
+                </th>
+                <th>
+                   Puppy 
+                </th>
+                <th>
+                   Status
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var adoption in Model.Adoptions) {
+            var user = Model.Users.FirstOrDefault(u => u.UserID == adoption.UserID); 
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => adoption.AdoptionID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => user.GivenName) @Html.DisplayFor(modelItem => user.FamilyName)
+                </td>
+                <td>
+                     @Html.DisplayFor(modelItem => adoption.PuppyID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => adoption.Status)
+                </td>
+                @if(adoption.Status == "In Progress")
+                {
+                    <td>
+                            @Html.ActionLink("Update Status", "Edit", new { id = adoption.AdoptionID }, new { @class = "btn btn-sm btn-outline-success" })
+                    </td>
+                }
+                else
+                {
+                    <td></td>
+                }
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>

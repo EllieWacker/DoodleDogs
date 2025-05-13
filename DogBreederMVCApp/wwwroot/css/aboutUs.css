@@ -1,0 +1,91 @@
+
+.tab-about {
+    background-color: #787474;
+    font-family: "Bahnschrift Light SemiCondensed", sans-serif;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+}
+
+.body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.image-container {
+    background-size: cover;
+    height: 25em;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: "Georgia", serif;
+    color: white;
+}
+
+p{
+    margin: 1em;
+    color: white;
+}
+
+.small-text {
+    font-family: "Georgia", serif;
+    font-size: 14px;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.scrollable-text {
+    overflow-y: auto;
+    max-height: 209px;
+    margin-top: 10px;
+}
+
+.background-text {
+    font-family: "Calibri", sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.text-wrap {
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    justify-content:center;
+}
+
+.small-flex {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+   border: solid, white, .2em
+}

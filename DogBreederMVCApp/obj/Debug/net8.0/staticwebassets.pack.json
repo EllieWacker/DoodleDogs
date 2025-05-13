@@ -1,0 +1,561 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DogBreederMVCApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DogBreederMVCApp.2xwx777wvs.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\ALit1.png",
+      "PackagePath": "staticwebassets\\Photos\\ALit1.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\ALit1One.png",
+      "PackagePath": "staticwebassets\\Photos\\ALit1One.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\ALit1One3.png",
+      "PackagePath": "staticwebassets\\Photos\\ALit1One3.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\ALit8One.jpg",
+      "PackagePath": "staticwebassets\\Photos\\ALit8One.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\AussieLit.png",
+      "PackagePath": "staticwebassets\\Photos\\AussieLit.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\AussieLit5.jpg",
+      "PackagePath": "staticwebassets\\Photos\\AussieLit5.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\AussieLit5.png",
+      "PackagePath": "staticwebassets\\Photos\\AussieLit5.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\Totoro.png",
+      "PackagePath": "staticwebassets\\Photos\\Totoro.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aLit2Four.jpg",
+      "PackagePath": "staticwebassets\\Photos\\aLit2Four.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aLit2One.jpg",
+      "PackagePath": "staticwebassets\\Photos\\aLit2One.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aLit2Three.jpg",
+      "PackagePath": "staticwebassets\\Photos\\aLit2Three.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aLit2Two.jpg",
+      "PackagePath": "staticwebassets\\Photos\\aLit2Two.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aLit3Five.png",
+      "PackagePath": "staticwebassets\\Photos\\aLit3Five.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aLit3Four.png",
+      "PackagePath": "staticwebassets\\Photos\\aLit3Four.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aLit3One.png",
+      "PackagePath": "staticwebassets\\Photos\\aLit3One.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aLit3Six.png",
+      "PackagePath": "staticwebassets\\Photos\\aLit3Six.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aLit3Three.png",
+      "PackagePath": "staticwebassets\\Photos\\aLit3Three.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aLit3Two.png",
+      "PackagePath": "staticwebassets\\Photos\\aLit3Two.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aussieLit1.png",
+      "PackagePath": "staticwebassets\\Photos\\aussieLit1.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aussieLit2.jpg",
+      "PackagePath": "staticwebassets\\Photos\\aussieLit2.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aussieLit3.png",
+      "PackagePath": "staticwebassets\\Photos\\aussieLit3.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aussiedoodle.jpg",
+      "PackagePath": "staticwebassets\\Photos\\aussiedoodle.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\aussiedoodle2.jpg",
+      "PackagePath": "staticwebassets\\Photos\\aussiedoodle2.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cLit2Five.jpg",
+      "PackagePath": "staticwebassets\\Photos\\cLit2Five.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cLit2Four.jpg",
+      "PackagePath": "staticwebassets\\Photos\\cLit2Four.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cLit2One.jpg",
+      "PackagePath": "staticwebassets\\Photos\\cLit2One.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cLit2Three.jpg",
+      "PackagePath": "staticwebassets\\Photos\\cLit2Three.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cLit2Two.jpg",
+      "PackagePath": "staticwebassets\\Photos\\cLit2Two.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cLit3Four.png",
+      "PackagePath": "staticwebassets\\Photos\\cLit3Four.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cLit3One.png",
+      "PackagePath": "staticwebassets\\Photos\\cLit3One.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cLit3Three.png",
+      "PackagePath": "staticwebassets\\Photos\\cLit3Three.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cLit3Two.png",
+      "PackagePath": "staticwebassets\\Photos\\cLit3Two.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cockapoo.jpg",
+      "PackagePath": "staticwebassets\\Photos\\cockapoo.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cockerLit1.png",
+      "PackagePath": "staticwebassets\\Photos\\cockerLit1.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cockerLit2.jpg",
+      "PackagePath": "staticwebassets\\Photos\\cockerLit2.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\cockerLit3.png",
+      "PackagePath": "staticwebassets\\Photos\\cockerLit3.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\fatherFinn.jpg",
+      "PackagePath": "staticwebassets\\Photos\\fatherFinn.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\fatherHarold.jpg",
+      "PackagePath": "staticwebassets\\Photos\\fatherHarold.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\gLit2Five.jpg",
+      "PackagePath": "staticwebassets\\Photos\\gLit2Five.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\gLit2Four.jpg",
+      "PackagePath": "staticwebassets\\Photos\\gLit2Four.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\gLit2One.jpg",
+      "PackagePath": "staticwebassets\\Photos\\gLit2One.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\gLit2Three.jpg",
+      "PackagePath": "staticwebassets\\Photos\\gLit2Three.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\gLit2Two.jpg",
+      "PackagePath": "staticwebassets\\Photos\\gLit2Two.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\gLit3Four.png",
+      "PackagePath": "staticwebassets\\Photos\\gLit3Four.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\gLit3One.png",
+      "PackagePath": "staticwebassets\\Photos\\gLit3One.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\gLit3Three.png",
+      "PackagePath": "staticwebassets\\Photos\\gLit3Three.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\gLit3Two.png",
+      "PackagePath": "staticwebassets\\Photos\\gLit3Two.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\goldenLit1.png",
+      "PackagePath": "staticwebassets\\Photos\\goldenLit1.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\goldenLit2.jpg",
+      "PackagePath": "staticwebassets\\Photos\\goldenLit2.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\goldenLit3.png",
+      "PackagePath": "staticwebassets\\Photos\\goldenLit3.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\goldendoodle.jpg",
+      "PackagePath": "staticwebassets\\Photos\\goldendoodle.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\logo.png",
+      "PackagePath": "staticwebassets\\Photos\\logo.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\motherClemmy.jpg",
+      "PackagePath": "staticwebassets\\Photos\\motherClemmy.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\motherClemmy.png",
+      "PackagePath": "staticwebassets\\Photos\\motherClemmy.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\motherMya.jpg",
+      "PackagePath": "staticwebassets\\Photos\\motherMya.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\motherRosie.jpg",
+      "PackagePath": "staticwebassets\\Photos\\motherRosie.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\pupAus1.jpg",
+      "PackagePath": "staticwebassets\\Photos\\pupAus1.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\sadPuppy.png",
+      "PackagePath": "staticwebassets\\Photos\\sadPuppy.png"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\testCassie.jpg",
+      "PackagePath": "staticwebassets\\Photos\\testCassie.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\testLuna.jpg",
+      "PackagePath": "staticwebassets\\Photos\\testLuna.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\testTwizzler.jpg",
+      "PackagePath": "staticwebassets\\Photos\\testTwizzler.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\wacker.jpg",
+      "PackagePath": "staticwebassets\\Photos\\wacker.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\Photos\\wackers.jpg",
+      "PackagePath": "staticwebassets\\Photos\\wackers.jpg"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\css\\aboutUs.css",
+      "PackagePath": "staticwebassets\\css\\aboutUs.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\css\\account.css",
+      "PackagePath": "staticwebassets\\css\\account.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\css\\application.css",
+      "PackagePath": "staticwebassets\\css\\application.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\css\\create.css",
+      "PackagePath": "staticwebassets\\css\\create.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\css\\litterDetail.css",
+      "PackagePath": "staticwebassets\\css\\litterDetail.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\css\\parent.css",
+      "PackagePath": "staticwebassets\\css\\parent.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\css\\puppyCreate.css",
+      "PackagePath": "staticwebassets\\css\\puppyCreate.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\css\\tableStyles.css",
+      "PackagePath": "staticwebassets\\css\\tableStyles.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\.Net3\\DogBreeder\\DogBreederMVCApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DogBreederMVCApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DogBreederMVCApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DogBreederMVCApp.props",
+      "PackagePath": "build\\DogBreederMVCApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DogBreederMVCApp.props",
+      "PackagePath": "buildMultiTargeting\\DogBreederMVCApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DogBreederMVCApp.props",
+      "PackagePath": "buildTransitive\\DogBreederMVCApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

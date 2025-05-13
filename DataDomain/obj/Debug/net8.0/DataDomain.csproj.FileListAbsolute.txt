@@ -1,0 +1,33 @@
+C:\csharp 2\BoatRental\DataDomain\bin\Debug\net8.0\DataDomain.deps.json
+C:\csharp 2\BoatRental\DataDomain\bin\Debug\net8.0\DataDomain.dll
+C:\csharp 2\BoatRental\DataDomain\bin\Debug\net8.0\DataDomain.pdb
+C:\csharp 2\BoatRental\DataDomain\obj\Debug\net8.0\DataDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\csharp 2\BoatRental\DataDomain\obj\Debug\net8.0\DataDomain.AssemblyInfoInputs.cache
+C:\csharp 2\BoatRental\DataDomain\obj\Debug\net8.0\DataDomain.AssemblyInfo.cs
+C:\csharp 2\BoatRental\DataDomain\obj\Debug\net8.0\DataDomain.csproj.CoreCompileInputs.cache
+C:\csharp 2\BoatRental\DataDomain\obj\Debug\net8.0\DataDomain.dll
+C:\csharp 2\BoatRental\DataDomain\obj\Debug\net8.0\refint\DataDomain.dll
+C:\csharp 2\BoatRental\DataDomain\obj\Debug\net8.0\DataDomain.pdb
+C:\csharp 2\BoatRental\DataDomain\obj\Debug\net8.0\ref\DataDomain.dll
+C:\csharp 2\DogBreeder\DataDomain\bin\Debug\net8.0\DataDomain.deps.json
+C:\csharp 2\DogBreeder\DataDomain\bin\Debug\net8.0\DataDomain.dll
+C:\csharp 2\DogBreeder\DataDomain\bin\Debug\net8.0\DataDomain.pdb
+C:\csharp 2\DogBreeder\DataDomain\obj\Debug\net8.0\DataDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\csharp 2\DogBreeder\DataDomain\obj\Debug\net8.0\DataDomain.AssemblyInfoInputs.cache
+C:\csharp 2\DogBreeder\DataDomain\obj\Debug\net8.0\DataDomain.AssemblyInfo.cs
+C:\csharp 2\DogBreeder\DataDomain\obj\Debug\net8.0\DataDomain.csproj.CoreCompileInputs.cache
+C:\csharp 2\DogBreeder\DataDomain\obj\Debug\net8.0\DataDomain.dll
+C:\csharp 2\DogBreeder\DataDomain\obj\Debug\net8.0\refint\DataDomain.dll
+C:\csharp 2\DogBreeder\DataDomain\obj\Debug\net8.0\DataDomain.pdb
+C:\csharp 2\DogBreeder\DataDomain\obj\Debug\net8.0\ref\DataDomain.dll
+C:\.Net3\DogBreeder\DataDomain\bin\Debug\net8.0\DataDomain.deps.json
+C:\.Net3\DogBreeder\DataDomain\bin\Debug\net8.0\DataDomain.dll
+C:\.Net3\DogBreeder\DataDomain\bin\Debug\net8.0\DataDomain.pdb
+C:\.Net3\DogBreeder\DataDomain\obj\Debug\net8.0\DataDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\.Net3\DogBreeder\DataDomain\obj\Debug\net8.0\DataDomain.AssemblyInfoInputs.cache
+C:\.Net3\DogBreeder\DataDomain\obj\Debug\net8.0\DataDomain.AssemblyInfo.cs
+C:\.Net3\DogBreeder\DataDomain\obj\Debug\net8.0\DataDomain.csproj.CoreCompileInputs.cache
+C:\.Net3\DogBreeder\DataDomain\obj\Debug\net8.0\DataDomain.dll
+C:\.Net3\DogBreeder\DataDomain\obj\Debug\net8.0\refint\DataDomain.dll
+C:\.Net3\DogBreeder\DataDomain\obj\Debug\net8.0\DataDomain.pdb
+C:\.Net3\DogBreeder\DataDomain\obj\Debug\net8.0\ref\DataDomain.dll

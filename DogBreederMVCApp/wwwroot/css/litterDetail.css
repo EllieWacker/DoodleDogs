@@ -1,0 +1,82 @@
+﻿body {
+}
+
+h1{
+    margin-bottom: 1em;
+}
+
+.imgBorder {
+    width: 40%;
+    border: double #d7b708 1em;
+}
+
+#puppy {
+    background-color: #629c88;
+}
+
+#imgLitter {
+    width: 40%;
+    margin: 1em;
+    border: solid #d7b708 .2em;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: gray;
+    max-width: 800px;
+    margin: auto;
+}
+
+#puppyContainer {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: #629c88;
+    max-width: 800px;
+    margin: auto;
+}
+
+#applicationContainer {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: gray;
+    max-width: 600px;
+    margin: auto;
+}
+
+.txtLitter {
+    color: white;
+}
+
+.col-sm-10 {
+    font-size: 1.1em;
+    justify-content: right;
+    color: white;
+    width: auto;
+}
+
+#divBoth{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#divText{
+    display: flex;
+}
+
+#divImg {
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    flex-direction: column;
+}
+
+.parent{
+    width: 20%;
+}

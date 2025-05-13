@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfPresentation.frmPuppyDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Puppy Detail View" Height="340" Width="480" Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="imgPup" Grid.Row="0" Grid.Column="2" Source="Totoro.png"/>
+        <Label x:Name="lblPupAvail" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" 
+               VerticalAlignment="Center" Content="Available: "/>
+        <Label x:Name="lblPupBreed" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" 
+               VerticalAlignment="Center" Content="Aussiedoodle"/>
+        <Label x:Name="lblPupMicro" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" 
+                VerticalAlignment="Center" Content="Microchip: "/>
+        <Label x:Name="lblPupPrice" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" 
+                VerticalAlignment="Center" Content="Price: "/>
+        <Label  x:Name="lblPupTreatment" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" 
+                VerticalAlignment="Center" Content="Treatment: " AutomationProperties.IsColumnHeader="True"/>
+        <Label  x:Name="lblPupWeight" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Left" 
+                VerticalAlignment="Center" Content="Weight: "/>
+        <Button x:Name="btnPupAdopt" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" 
+                VerticalAlignment="Center" Content="Adopt" Width="50" Height="30" Background="White" Click="btnPupAdopt_Click"/>
+  
+       
+    </Grid>
+</Window>

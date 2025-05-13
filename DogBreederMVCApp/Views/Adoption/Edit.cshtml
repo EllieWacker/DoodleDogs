@@ -1,0 +1,38 @@
+﻿@model DataDomain.Adoption
+
+@{
+    ViewData["Title"] = "Edit";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/application.css" asp-append-version="true" />
+}
+
+<h1>Update Adoption Status</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AdoptionID" />
+            <input type="hidden" asp-for="ApplicationID" />
+            <input type="hidden" asp-for="PuppyID" />
+            <input type="hidden" asp-for="UserID" />
+            <div class="div col-md-4">
+                <div class="form-group">
+                    <label asp-for="Status" class="control-label"></label>
+                    @Html.DropDownListFor(m => m.Status,
+                             new SelectList(ViewBag.Statuses),
+                             new { @class = "form-control", style = "width: 100%" })
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" style="font-size: 1em" class="btn btn-sm btn-outline-success" />
+                <a asp-action="Index" style="font-size: 1em" class="btn btn-sm btn-outline-primary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

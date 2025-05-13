@@ -1,0 +1,73 @@
+
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px; 
+}
+
+.gracie {
+    width: 30em;
+    object-fit: cover;
+}
+
+.logo {
+    width: 10em;
+}
+
+#home-paragraph{
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.display-4 {
+    color: white;
+}
+
+.text-center {
+    margin: 1em 1em 1em 1em;
+}
+
+.nav-link:hover {
+    color: #629c88 !important;
+}
+
+.nav-link:active {
+    background-color: #629c88 !important;
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    color: #629c88 !important;
+}
+
+.dropdown-item:active {
+    background-color: #629c88 !important;
+    color: white !important;
+}
+
+.dropdown-toggle:active{
+    background-color: white !important;
+}

@@ -1,0 +1,77 @@
+﻿@model ParentsViewModel
+
+@{
+    ViewData["Title"] = "BothBasicIndex";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/tableStyles.css" asp-append-version="true" />
+}
+
+<h1>All Parent Dogs</h1>
+
+
+<h2>Fathers</h2>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr class="blueTr">
+                <th>Name</th>
+                <th>Breed</th>
+                <th>@Html.DisplayNameFor(model => model.Fathers.First().Personality)</th>
+                <th>Energy Level</th>
+                <th>Barking Level</th>
+                <th>@Html.DisplayNameFor(model => model.Fathers.First().Trainability)</th>
+                <th>@Html.DisplayNameFor(model => model.Fathers.First().Image)</th>
+                <th>@Html.DisplayNameFor(model => model.Fathers.First().Description)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var father in Model.Fathers)
+            {
+                <tr>
+                    <td>@father.FatherDogID</td>
+                    <td>@father.BreedID</td>
+                    <td>@father.Personality</td>
+                    <td>@father.EnergyLevel</td>
+                    <td>@father.BarkingLevel</td>
+                    <td>@father.Trainability</td>
+                    <td>@father.Image</td>
+                    <td>@father.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<h2>Mothers</h2>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr class="pinkTr">
+                <th>Name</th>
+                <th>Breed</th>
+                <th>@Html.DisplayNameFor(model => model.Mothers.First().Personality)</th>
+                <th>Energy Level</th>
+                <th>Barking Level</th>
+                <th>@Html.DisplayNameFor(model => model.Mothers.First().Trainability)</th>
+                <th>@Html.DisplayNameFor(model => model.Mothers.First().Image)</th>
+                <th>@Html.DisplayNameFor(model => model.Mothers.First().Description)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var mother in Model.Mothers)
+            {
+                <tr>
+                    <td>@mother.MotherDogID</td>
+                    <td>@mother.BreedID</td>
+                    <td>@mother.Personality</td>
+                    <td>@mother.EnergyLevel</td>
+                    <td>@mother.BarkingLevel</td>
+                    <td>@mother.Trainability</td>
+                    <td>@mother.Image</td>
+                    <td>@mother.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

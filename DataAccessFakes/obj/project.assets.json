@@ -1,0 +1,124 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "DataAccessInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "DataDomain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataAccessInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessInterfaces.dll": {}
+        }
+      },
+      "DataDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/DataDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataDomain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DataAccessInterfaces/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessInterfaces/DataAccessInterfaces.csproj",
+      "msbuildProject": "../DataAccessInterfaces/DataAccessInterfaces.csproj"
+    },
+    "DataDomain/1.0.0": {
+      "type": "project",
+      "path": "../DataDomain/DataDomain.csproj",
+      "msbuildProject": "../DataDomain/DataDomain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "DataAccessInterfaces >= 1.0.0",
+      "DataDomain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Ejwac\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\.Net3\\DogBreeder\\DataAccessFakes\\DataAccessFakes.csproj",
+      "projectName": "DataAccessFakes",
+      "projectPath": "C:\\.Net3\\DogBreeder\\DataAccessFakes\\DataAccessFakes.csproj",
+      "packagesPath": "C:\\Users\\Ejwac\\.nuget\\packages\\",
+      "outputPath": "C:\\.Net3\\DogBreeder\\DataAccessFakes\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Ejwac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\.Net3\\DogBreeder\\DataAccessInterfaces\\DataAccessInterfaces.csproj": {
+              "projectPath": "C:\\.Net3\\DogBreeder\\DataAccessInterfaces\\DataAccessInterfaces.csproj"
+            },
+            "C:\\.Net3\\DogBreeder\\DataDomain\\DataDomain.csproj": {
+              "projectPath": "C:\\.Net3\\DogBreeder\\DataDomain\\DataDomain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+
+<form class="form">
+    <div class="text-center welcome-div">
+        <h1 class="display-4" >Welcome to Doodle Dogs</h1>
+        <img src="~/Photos/aussiedoodle2.jpg" alt="Puppy" class="gracie" />
+        <div>
+            <p id="home-paragraph">We are a trusted dog breeder from Iowa with a love for puppies! Our goal is to breed quality Aussiedoodle, Goldendoodle, and Cockapoo puppies. In order to make an adoption, we require that you fill out our puppy application and send us a down payment of $100. Our puppies' prices range from $800 to $1500. After you have been approved as an adopter, you can choose your puppy from our puppies page. Then we can decide on a meeting place or you can come pick your puppy up at our location. We hope you'll love your puppy as much as we do!</p>
+        </div>
+    </div>
+
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <hr class="featurette-divider">
+        var item = Model[i];
+
+        <div class="row featurette">
+            <div class="col-md-7 @(i == 1 ? "order-md-2" : "")">
+                <h2 class="featurette-heading fw-normal lh-1">@item.TestimonialID <span class="text-body-secondary"></span></h2>
+                <p class="lead">@item.Details</p>
+            </div>
+
+            <div class="col-md-5 @(i == 1 ? "order-md-1" : "") d-flex justify-content-center align-items-center">
+                <img src="~/Photos/@item.Image" alt="Testimonial Image" class="testimonial-img img-fluid" width="300" height="300">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+    }
+   
+    
+
+
+</form>

@@ -1,0 +1,488 @@
+﻿<Window x:Class="WpfPresentation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPresentation"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="650" Width="1200" Loaded="Window_Loaded" FontFamily="Bahnschrift SemiLight">
+    <Grid HorizontalAlignment="Left" Width="1200">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Outer page grid -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition />
+            <RowDefinition Height="24.04"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <Menu Padding="20 0 0 0">
+            <MenuItem Header="File" x:Name="mnuFile">
+                <MenuItem Header="Exit" x:Name="mnuExit" Click="mnuExit_Click"></MenuItem>
+                <MenuItem Header="Create new Account" x:Name="mnuNewUser" Click="mnuNewUser_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Help" x:Name="mnuHelp">
+                <MenuItem Header="Change Password" x:Name="mnuUpdatePassword" Click="mnuUpdatePassword_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <!-- inner grid for login controls -->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="120"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="120"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="txbGreeting" Grid.Column="1" Padding="10 0 0 0"
+                    Grid.RowSpan="2" Text="You are not logged in." Margin="0,5,0,5" 
+                    VerticalAlignment="Center" TextWrapping="Wrap" FontSize="14" />
+
+            <TextBox x:Name="txtEmail" Grid.Row="0" Grid.Column="2" Text="admin@company.com"
+                     Margin="5 5 5 0" HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center" FontSize="14" />
+
+            <PasswordBox x:Name="pwdPassword" Grid.Row="0" Grid.Column="3" Password="P@ssw0rd"
+                     Margin="5 5 5 0" HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center" FontSize="14"/>
+
+            <Button x:Name="btnLoginLogout" Grid.RowSpan="2" Grid.Column="4"
+                     Height="40" Margin="5 0 20 0" Content="Log In"
+                     FontSize="14" FontWeight="Bold" Click="btnLoginLogout_Click" Background="#FFF4F2EC"/>
+
+            <Label x:Name="lblEmail" Grid.Row="1" Grid.Column="2" 
+                    Content="Email" HorizontalContentAlignment="Center"
+                    VerticalAlignment="Top" FontSize="14"/>
+
+            <Label x:Name="lblPassword" Grid.Row="1" Grid.Column="3" 
+                    Content="Password" HorizontalContentAlignment="Center"
+                    VerticalAlignment="Top" FontSize="14"/>
+
+        </Grid>
+        <!-- end of inner grid for login controls -->
+
+        <StackPanel x:Name="tabContainer" Grid.Row="3">
+            <TabControl x:Name="tabSetMain" Height="447">
+                <TabItem x:Name="tabHome" Header="Home" FontFamily="Bahnschrift Light SemiCondensed" BorderBrush="#FFACACAC">
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FFD7FFFE" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                    <Grid Grid.Row="6" Grid.ColumnSpan="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="300"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="500"/>
+                            <ColumnDefinition Width="500"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Text="Home" FontSize="24" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Calibri" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="158" TextAlignment="Center" Margin="0,7,0,0"/>
+                        <Rectangle Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="3" Fill="#FF75BDA3" Margin="0,44,0,0"/>
+                        <Image x:Name="imgHome" Height="290" Grid.Column="1" Source="C:\csharp 2\DogBreeder\WpfPresentation\bin\Debug\net8.0-windows\Photos\pupAus1.jpg" VerticalAlignment="Top" Margin="6,1,3,0" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Stretch="UniformToFill" />
+                        <TextBlock x:Name="txtHomeDetails" Grid.Column="2" Grid.Row="1" TextWrapping="Wrap" FontSize="16" FontFamily="Leelawadee" HorizontalAlignment="Center" VerticalAlignment="Center"  Padding ="30,0,0,0" Foreground="White"><Run Text="Welcome to Doodle Dogs!"/><LineBreak/><Run Text="We are a trusted dog breeder from Iowa with a love for puppies! Our goal is to breed quality Aussiedoodle, Goldendoodle and Cockapoo puppies. In order to make an adoption, we require that you fill out our puppy application and send us a down payment of $100. Our puppies' prices range from $800 to $1500. After you have been approved as an adopter, you can choose your puppy from our puppies page. Then we can decide on a meeting place or you can come pick your puppy up at our location. We hope you'll love your puppy as much as we do!"/></TextBlock>
+                    </Grid>
+
+
+
+
+
+                </TabItem>
+                <TabItem x:Name="tabPuppies" Header="Puppies" HorizontalAlignment="Left" Width="54" Loaded="tabPuppies_Loaded" FontFamily="Bahnschrift Light SemiCondensed" FontWeight="Bold" >
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FFD7FFFE" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                    <Grid Grid.Row="8" Grid.ColumnSpan="5" Height="433">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="140"/>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="220"/>
+                            <ColumnDefinition Width="220"/>
+                            <ColumnDefinition Width="220"/>
+                            <ColumnDefinition Width="220"/>
+                            <ColumnDefinition Width="220"/>
+                            <ColumnDefinition Width="50"/>
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="lblPupPuppies" Grid.Row="0" Grid.Column="3" Content="Puppies"  HorizontalAlignment="Center" FontFamily="Calibri" FontSize="16" FontWeight="Bold" Width="62"/>
+
+                        <Rectangle Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="7" Grid.RowSpan="7" Fill="#FF75BDA3"/>
+                        <Button x:Name="btnPupAussie" Grid.Row="1" Grid.Column="2" Content="Aussiedoodle" Height="30" VerticalAlignment="Top" Click="btnPupAussie_Click" Width="90" HorizontalAlignment="Right" Background="#FFF4F2EC" />
+                        <Button x:Name="btnPupGolden" Grid.Row="1" Grid.Column="3" Content="Goldendoodle" Height="30" VerticalAlignment="Top"  Click="btnPupGolden_Click" Width="90" HorizontalAlignment="Center" Background="#FFF4F2EC" />
+                        <Button x:Name="btnPupCockapoo" Grid.Row="1" Grid.Column="4" Content="Cockapoo" Height="30"  VerticalAlignment="Top" Click="btnPupCockapoo_Click" HorizontalAlignment="Left" Width="90" Background="#FFF4F2EC"  />
+
+                        <Label x:Name="lblPupName" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Content="Mya and Harold's Mini Aussiedoodle Puppies" HorizontalAlignment="Center" FontFamily="Calibri" FontWeight="Bold" FontSize="16" VerticalAlignment="Top" Height="30" Width="NaN" Foreground="White"/>
+
+                        <Image x:Name="imgPup1" Grid.Row="3" Grid.Column="1" Source="Totoro.png" Width="150" HorizontalAlignment="Center" Margin="0,0,0,3" Stretch="UniformToFill"/>
+                        <TextBlock x:Name="txbPup1" Grid.Row="5" Grid.Column="1"    Text="Photo1" Height="25" HorizontalAlignment="Center" FontFamily="Calibri Light" FontSize="14" TextAlignment="Center" Foreground="White"/>
+                        <TextBlock x:Name="txbPupGen1" Grid.Row="4" Grid.Column="1" Text="Gender1" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Calibri Light" FontSize="14" Width="60" TextAlignment="Center" FontWeight="Normal" Foreground="White" />
+                        <Button x:Name="btnPup1" Grid.Row="6" Grid.Column="1" Content="View" Height="30" VerticalAlignment="Top" Click="btnPup1_Click" Width="90" HorizontalAlignment="Center" FontSize="14" Background="#FFF4F2EC" />
+
+                        <Image x:Name="imgPup2" Grid.Row="3" Grid.Column="2" Source="Totoro.png" Width="150" HorizontalAlignment="Center" Margin="0,0,0,4" Stretch="UniformToFill" />
+                        <TextBlock x:Name="txbPup2" Grid.Row="5" Grid.Column="2"    Text="Photo2" Height="25" HorizontalAlignment="Center" FontFamily="Calibri Light" FontSize="14" TextAlignment="Center" Foreground="White"/>
+                        <TextBlock x:Name="txbPupGen2" Grid.Row="4" Grid.Column="2" Text="Gender2" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Calibri Light" FontSize="14" Width="60" TextAlignment="Center" Foreground="White"/>
+                        <Button x:Name="btnPup2" Grid.Row="6" Grid.Column="2" Content="View" Height="30" VerticalAlignment="Top" Click="btnPup2_Click" Width="90" HorizontalAlignment="Center" FontSize="14" Background="#FFF4F2EC" />
+
+                        <Image x:Name="imgPup3" Grid.Row="3" Grid.Column="3" Source="Totoro.png" Width="150" HorizontalAlignment="Center" Margin="0,0,0,4" Stretch="UniformToFill"/>
+                        <TextBlock x:Name="txbPup3" Grid.Row="5" Grid.Column="3"    Text="Photo3" Height="auto"  FontFamily="Calibri Light" FontSize="14" HorizontalAlignment="Center" TextAlignment="Center" Foreground="White"/>
+                        <TextBlock x:Name="txbPupGen3" Grid.Row="4" Grid.Column="3" Text="Gender3" Height="auto" HorizontalAlignment="Center" FontFamily="Calibri Light" FontSize="14" Width="60" TextAlignment="Center" Foreground="White"/>
+                        <Button x:Name="btnPup3" Grid.Row="6" Grid.Column="3" Content="View" Height="30" VerticalAlignment="Top" Click="btnPup3_Click" Width="90" HorizontalAlignment="Center" FontSize="14" Background="#FFF4F2EC" />
+
+                        <Image x:Name="imgPup4" Grid.Row="3" Grid.Column="4" Source="Totoro.png" Width="150" HorizontalAlignment="Center" Margin="0,0,0,2" Stretch="UniformToFill"/>
+                        <TextBlock x:Name="txbPup4" Grid.Row="5" Grid.Column="4"    Text="Photo4" Height="auto"  FontFamily="Calibri Light" FontSize="14" HorizontalAlignment="Center" TextAlignment="Center" Foreground="White"/>
+                        <TextBlock x:Name="txbPupGen4" Grid.Row="4" Grid.Column="4" Text="Gender4" Height="auto" HorizontalAlignment="Center" FontFamily="Calibri Light" FontSize="14" Width="60" TextAlignment="Center" Foreground="White"/>
+                        <Button x:Name="btnPup4" Grid.Row="6" Grid.Column="4" Content="View" Height="30" VerticalAlignment="Top" Click="btnPup4_Click" Width="90" HorizontalAlignment="Center" FontSize="14" Background="#FFF4F2EC" />
+
+                        <Image x:Name="imgPup5" Grid.Row="3" Grid.Column="5" Source="Totoro.png" Width="150" HorizontalAlignment="Center" Margin="0,0,0,2" Stretch="UniformToFill" />
+                        <TextBlock x:Name="txbPup5" Grid.Row="5" Grid.Column="5"    Text="Photo4" Height="auto"  FontFamily="Calibri Light" FontSize="14" HorizontalAlignment="Center" TextAlignment="Center" Foreground="White"/>
+                        <TextBlock x:Name="txbPupGen5" Grid.Row="4" Grid.Column="5" Text="Gender4" Height="auto" HorizontalAlignment="Center" FontFamily="Calibri Light" FontSize="14" Width="60" TextAlignment="Center" Foreground="White"/>
+                        <Button x:Name="btnPup5" Grid.Row="6" Grid.Column="5" Content="View" Height="30" VerticalAlignment="Top" Click="btnPup5_Click" Width="90" HorizontalAlignment="Center" FontSize="14" Background="#FFF4F2EC" />
+
+                    </Grid>
+                </TabItem>
+
+                <TabItem x:Name="tabLitters" Header="Litters" Height="20" Loaded="tabLitters_Loaded" FontFamily="Bahnschrift Light SemiCondensed">
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FFD7FFFE" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                    <Grid Grid.Row="6" Grid.ColumnSpan="4" Height="403">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="177"/>
+                            <ColumnDefinition Width="223"/>
+                            <ColumnDefinition Width="400"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" Margin="-2,0,-176,-57" Fill="#FF717171"/>
+
+                        <Label x:Name="lblLitBreeds" Grid.Row="0" Grid.Column="2" Content="Litters" HorizontalAlignment="Center" FontFamily="Calibri" FontSize="24"/>
+
+                        <Button x:Name="btnLitAussie" Grid.Row="1" Grid.Column="2" Content="Aussiedoodle" Height="30" Margin="62,0,252,0" VerticalAlignment="Top" Click="btnLitAussie_Click" Background="#FFF4F2EC" />
+                        <Button x:Name="btnLitGolden" Grid.Row="1" Grid.Column="2" Content="Goldendoodle" Height="30" VerticalAlignment="Top"  Margin="158,0,158,0" Click="btnLitGolden_Click" Background="#FFF4F2EC" />
+                        <Button x:Name="btnLitCockapoo" Grid.Row="1" Grid.Column="2" Content="Cockapoo" Height="30" Margin="252,0,62,0" VerticalAlignment="Top" Click="btnLitCockapoo_Click" Background="#FFF4F2EC"  />
+
+                        <TextBlock x:Name="txbLitName" Grid.Row="2" Grid.Column="2" Text="Maya and Harold's Mini Aussiedoodle Litter" HorizontalAlignment="Center" FontFamily="Calibri" FontSize="18" VerticalAlignment="Center" Height="30" Width="388" TextAlignment="Center" Foreground="White"/>
+                        <TextBlock x:Name="txbLitAbout" Grid.Row="3" Grid.Column="2" Padding="10,10,10,0" TextWrapping="Wrap" Text="Aboutdogblahasdfjdslfjksdklfjsdalkfjnbmbmnbdfsasdfasdfadgadgadfgadsgadfgdagsagm" HorizontalAlignment="Left" Width="394" FontFamily="Calibri Light" VerticalAlignment="Center" Height="100" FontSize="16" TextAlignment="Center" Foreground="White"/>
+
+                        <Image x:Name="imgLitMom" Grid.Row="4" Grid.Column="1"  Height="150" Stretch="UniformToFill" Source="/Totoro.png" />
+                        <Image x:Name="imgLitAll" Grid.Row="4" Grid.Column="2" Source="Totoro.png" Height="150" VerticalAlignment="Center" Margin="66,0,85,0" Stretch="UniformToFill" />
+                        <Image x:Name="imgLitDad" Grid.Row="4" Grid.Column="3" Source="Totoro.png" Height="150" Stretch="UniformToFill" Width="223" />
+
+
+
+                    </Grid>
+                </TabItem>
+
+
+
+
+                <TabItem x:Name="tabAbout" Header="About Us" FontFamily="Bahnschrift Light SemiCondensed">
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FFD7FFFE" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                    <Grid Grid.Row="5" Grid.ColumnSpan="4">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="350"/>
+                            <ColumnDefinition Width="480"/>
+                            <ColumnDefinition Width="370"/>
+                            <ColumnDefinition Width="auto" MinWidth="0"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" Fill="#FF75BDA3"/>
+                        <Rectangle Grid.Row="1" Grid.Column="2" Grid.RowSpan="4" Fill="#FF75BDA3"/>
+                        <TextBlock x:Name="lblAbOurLocation" Grid.Row="2" Grid.Column="0" Text="Our Location: Made-Up, IA 51246" FontFamily="Georgia" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Top" FontSize="14" Height="16" Width="211" Foreground="White"/>
+                        <TextBlock x:Name="lblAbOurPhone" Grid.Row="3" Grid.Column="0" Text="Our Phone: (309)444-4432" FontFamily="Georgia" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Top" FontSize="14" Height="16" Width="170" Foreground="White"/>
+                        <TextBlock x:Name="lblAbOurEmail" Grid.Row="4" Grid.Column="0" Text="Our Email: DoodleDogs@gmail.com" FontFamily="Georgia" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Top" FontSize="14" Height="16" Width="250" Foreground="White"/>
+
+                        <Image x:Name="imgAboutUs" Grid.Column="2" Grid.Row="1" Grid.RowSpan="5" Source="C:\csharp 2\DogBreeder\WpfPresentation\bin\Debug\net8.0-windows\Photos\wacker.jpg" VerticalAlignment="Top" Stretch="UniformToFill" Height="375" />
+                        <TextBlock Text="Our Background" FontSize="24" Grid.Column="1"  Grid.Row="1" FontFamily="Calibri" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="158"/>
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Column="1" Grid.Row="2" Grid.RowSpan="3" HorizontalScrollBarVisibility="Auto" VerticalAlignment="Top">
+                            <TextBlock x:Name="txtAboutUs" Grid.Column="1" Padding="15,10,15,10" Grid.Row="3" Grid.RowSpan="2" TextWrapping="Wrap" Height="209" FontSize="16" FontFamily="Calibri Light" Width="478" Margin="0,10,0,0" TextAlignment="Center"><Run Text="Hello! We're the Wacker Family!"/><LineBreak/><Run Text="Doodle Dogs opened in August of 2024. We have always loved our Aussiedoodle puppy Gracie and she inspired us to open a dog breeding business of our own. After much research, we found that Aussiedoodles, Goldendoodles and Cockapoos are wonderful sweet dogs and that they would be perfect for us! We have been raising the puppies in a renovated garage on our property and making sure they have a happy, warm and clean environment. It is our desire to give our puppies good homes and lots of love, so please reach out to us with any questions! We hope to hear from you soon!"/></TextBlock>
+                        </ScrollViewer>
+                    </Grid>
+                </TabItem>
+
+
+
+                <TabItem x:Name="tabApplication" Header="Puppy Application" FontFamily="Bahnschrift Light SemiCondensed" FontWeight="Bold" >
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FFD7FFFE" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                    <Grid Grid.Row="7" Grid.ColumnSpan="6">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="75"/>
+                            <RowDefinition Height="75"/>
+                            <RowDefinition Height="75"/>
+                            <RowDefinition Height="75"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="70"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width= "200"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column ="2" Content="Puppy Application" FontSize="24" FontFamily="Calibri" HorizontalAlignment="Left" Grid.ColumnSpan="3" Margin="100,0,0,0" Width="auto" Height="50" FontWeight="Bold"/>
+
+                        <Rectangle Grid.Column ="0" Grid.ColumnSpan="6" Grid.RowSpan="6" Fill="#FF717171" RadiusX="0" RadiusY="0" Margin="0,55,0,0" />
+                        <Label x:Name="lblAppFullName"  Grid.Row="1" Grid.Column="1" Content="Full Name" HorizontalAlignment="Left" Width="auto" Foreground="White" FontFamily="Calibri Light" FontSize="14" />
+                        <TextBox x:Name="txtAppFullName" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" HorizontalAlignment="Left" Width="155" Height="30"/>
+
+                        <Label x:Name="lblAppAge"  Grid.Row="1" Grid.Column="2" Content="Age" HorizontalAlignment="Left" Width="auto" FontFamily="Calibri Light" FontSize="14" Foreground="White" />
+                        <TextBox x:Name="txtAppAge" Grid.Row="1" Grid.Column="2" PreviewTextInput="TextBox_OnPreviewTextInput" TextWrapping="Wrap" HorizontalAlignment="Left" Width="155" Height="30"/>
+
+                        <Label x:Name="lblAppRenting"  Grid.Row="1" Grid.Column="3" Content="Is Your Home Rented?" HorizontalAlignment="Left" Width="auto" FontFamily="Calibri Light" FontSize="14" Foreground="White" />
+                        <ComboBox x:Name="cmbAppRenting"  Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" Width="155" Height="30">
+                            <ComboBoxItem IsSelected="True" Content = "Yes"/>
+                            <ComboBoxItem Content = "No"/>
+                        </ComboBox>
+
+                        <Label x:Name="lblAppYard"  Grid.Row="1" Grid.Column="4" Content="Does Your House Have a Yard?" HorizontalAlignment="Left" Width="auto" Foreground="White" FontFamily="Calibri Light" FontSize="14" />
+                        <ComboBox x:Name="cmbAppYard"  Grid.Row="1" Grid.Column="4" HorizontalAlignment="Left" Width="155" Height="30">
+                            <ComboBoxItem IsSelected="True" Content = "Yes"/>
+                            <ComboBoxItem Content = "No"/>
+                        </ComboBox>
+
+                        <Label x:Name="lblAppBreed"  Grid.Row="2" Grid.Column="1" Content="What Breed would you like?" HorizontalAlignment="Left" Width="auto" FontFamily="Calibri Light" FontSize="14" Foreground="White"/>
+                        <ComboBox x:Name="cmbAppBreed"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Width="155" Height="30">
+                            <ComboBoxItem IsSelected="True" Content = "Aussiedoodle"/>
+                            <ComboBoxItem Content = "Goldendoodle"/>
+                            <ComboBoxItem Content = "Cockapoo"/>
+                        </ComboBox>
+
+                        <Label x:Name="lblAppGender"  Grid.Row="2" Grid.Column="2" Content="Desired Puppy Gender" HorizontalAlignment="Left" Width="auto" Foreground="White" FontFamily="Calibri Light" FontSize="14"/>
+                        <ComboBox x:Name="cmbAppGender"  Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" Width="155" Height="30">
+                            <ComboBoxItem IsSelected="True" Content = "Male"/>
+                            <ComboBoxItem Content = "Female"/>
+                        </ComboBox>
+
+                        <Label x:Name="lblAppCommunication"  Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" Content="Method of Communication" HorizontalAlignment="Left" Width="220" Foreground="White" FontFamily="Calibri Light" FontSize="14"/>
+                        <ComboBox x:Name="cmbAppCommunication"  Grid.Row="2" Grid.Column="3" HorizontalAlignment="Left" Width="155" Height="30">
+                            <ComboBoxItem IsSelected="True" Content = "Phone Call"/>
+                            <ComboBoxItem Content = "Text"/>
+                            <ComboBoxItem Content = "Email"/>
+                        </ComboBox>
+
+                        <Label x:Name="lblAppComment"  Grid.Row="3" Grid.Column="1" Content="Comment" HorizontalAlignment="Left" Width="auto" Height="30" VerticalAlignment="Top" FontFamily="Calibri Light" FontSize="14" Foreground="White"/>
+                        <TextBox x:Name="txtAppComment" Grid.Row="3" Grid.Column="1" Grid.RowSpan="2" TextWrapping="Wrap" HorizontalAlignment="Left" Width="756" Height="110" Grid.ColumnSpan="4" VerticalAlignment="Bottom" Margin="0,0,0,10"/>
+
+                        <Button x:Name="btnAppSubmit" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"  Content="Submit" Width="100" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" Background="#FFF4F2EC" Margin="0,0,0,18" FontSize="16" FontFamily="Calibri Light" Click="btnAppSubmit_Click"/>
+
+                    </Grid>
+                </TabItem>
+
+
+
+                <TabItem x:Name="tabTestimonials" Header="Testimonials" Loaded="tabTestimonials_Loaded" FontFamily="Bahnschrift Light SemiCondensed">
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FFD7FFFE" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                    <Grid Grid.Row="6" Grid.ColumnSpan="4" Height="403">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="300"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="177"/>
+                            <ColumnDefinition Width="223"/>
+                            <ColumnDefinition Width="400"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="lblTestBreeds" Grid.Row="0" Grid.Column="2" Content="Breeds" HorizontalAlignment="Center" FontFamily="Calibri" FontSize="16" FontWeight="Bold" Width="56"/>
+
+                        <Button x:Name="btnTestAussie" Grid.Row="1" Grid.Column="2" Content="Aussiedoodle" Height="30" Margin="62,0,252,0" VerticalAlignment="Top" Click="btnTestAussie_Click" Background="#FFF4F2EC" />
+                        <Button x:Name="btnTestGolden" Grid.Row="1" Grid.Column="2" Content="Goldendoodle" Height="30" VerticalAlignment="Top"  Margin="158,0,158,0" Click="btnTestGolden_Click" Background="#FFF4F2EC" />
+                        <Button x:Name="btnTestCockapoo" Grid.Row="1" Grid.Column="2" Content="Cockapoo" Height="30" Margin="252,0,62,0" VerticalAlignment="Top" Click="btnTestCockapoo_Click" Background="#FFF4F2EC"  />
+
+                        <TextBlock x:Name="txbTestImage" Grid.Column="1" Grid.Row="3" Text="Family Testimonial" HorizontalAlignment="Center" FontFamily="Calibri" FontWeight="Bold" FontSize="18" VerticalAlignment="Top" Height="30" Width="212" Margin="0,36,0,0" TextAlignment="Center"/>
+                        <Image x:Name="imgTestImage" Grid.Row="3" Grid.Column="2" Source="Totoro.png"/>
+                        <TextBlock x:Name="txbTestAbout" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" TextWrapping="Wrap" Padding="5, 20, 10, 30" Text="fjngkjfdngfskdjgnkdfjngkdfjsngksdfjngdkjfdsgsdgdskgdsfgsd" HorizontalAlignment="Left" Width="259" FontFamily="Calibri Light" VerticalAlignment="Center" Height="142" Background="#FF80CFB2" FontSize="16" Foreground="White"/>
+                    </Grid>
+                </TabItem>
+
+
+                <TabItem x:Name="tabParentDogs" Header="Parent Dogs" Loaded="tabParentDogs_Loaded" FontFamily="Bahnschrift Light SemiCondensed" >
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FFD7FFFE" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                    <Grid Grid.Row="6" Grid.ColumnSpan="4">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="220"/>
+                            <RowDefinition Height="82"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="400"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="400"/>
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="lblParFemale" Grid.Row="0" Grid.Column="1" Content="Females" HorizontalAlignment="Center" FontFamily="Calibri" FontSize="16" FontWeight="Bold" Width="64"/>
+                        <Label x:Name="lblParMale" Grid.Row="0" Grid.Column="2" Content="Male" HorizontalAlignment="Center" FontFamily="Calibri" FontWeight="Bold" FontSize="16" Width="44"/>
+
+                        <Button x:Name="btnParClemmy" Grid.Row="1" Grid.Column="1" Content="Clemmy" Height="30" Margin="15,0,135,0" VerticalAlignment="Top" Click="btnParClemmy_Click" Background="#FFF4F2EC"/>
+                        <Button x:Name="btnParMaya" Grid.Row="1" Grid.Column="1" Content="Maya" Height="30" VerticalAlignment="Top" Click="btnParMaya_Click" Background="#FFF4F2EC" Margin="75,0,75,0"/>
+                        <Button x:Name="btnParRosie" Grid.Row="1" Grid.Column="1" Content="Rosie" Height="30" Margin="135,0,15,0" VerticalAlignment="Top" Click="btnParRosie_Click" Background="#FFF4F2EC"/>
+
+                        <Button x:Name="btnParHarold" Grid.Row="1" Grid.Column="2" Content="Harold" Width="50" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnParHarold_Click" Background="#FFF4F2EC"/>
+
+                        <Rectangle Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="3" Fill="#FF717171" Margin="0,0,0,7" />
+                        <Label x:Name="lblParImage"  Grid.Row="2" HorizontalAlignment="Center" FontFamily="Calibri" FontWeight="Bold" FontSize="18" VerticalAlignment="Top" Foreground="White" Height="10" Margin="0,20,0,0" Width="10"/>
+                        <Image x:Name="imgParImage" Grid.Row="3" Source="totoro.png" Grid.Column="0" Margin="50,0,50,3" Stretch="UniformToFill" />
+                        <TextBlock x:Name="txbParAbout" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"  TextWrapping="Wrap" Text="loasdfasfjsklfjsaldkfjsldkjflsakjfasjdkfhsakdfjsalkdhfa j                                          fdasfsafsadfsadfasdfklasdfjafffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" Padding="5, 0, 30, 30"  FontFamily="Calibri Light" FontSize="16" VerticalAlignment="Center" LineHeight="18" Margin="3,0,2,0" Height="216" Foreground="White"/>
+                        <Label x:Name="lblParList1" Grid.Row="3" Grid.Column="3" Content="Item1" HorizontalAlignment="Left" FontFamily="Calibri Light" FontSize="16"  VerticalAlignment="Top" Foreground="White" />
+                        <Label x:Name="lblParList2" Grid.Row="3" Grid.Column="3" Content="Item2" HorizontalAlignment="Left" FontFamily="Calibri Light" FontSize="16" VerticalAlignment="Top" Margin="0,40,0,0" Foreground="White"/>
+                        <Label x:Name="lblParList3" Grid.Row="3" Grid.Column="3" Content="Item3" HorizontalAlignment="Left" FontFamily="Calibri Light" FontSize="16" VerticalAlignment="Top" Margin="0,80,0,0" Foreground="White"/>
+                        <Label x:Name="lblParList4" Grid.Row="3" Grid.Column="3" Content="Item4" HorizontalAlignment="Left" FontFamily="Calibri Light" FontSize="16" VerticalAlignment="Top" Margin="0,120,0,0" Foreground="White"/>
+                    </Grid>
+                </TabItem>
+
+
+                <TabItem x:Name="tabBreeds" Header="Breeds" Loaded="tabBreeds_Loaded" FontFamily="Bahnschrift Light SemiCondensed" >
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FFD7FFFE" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                    <Grid Grid.Row="6" Grid.ColumnSpan="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="400"/>
+                            <ColumnDefinition Width="400"/>
+                            <ColumnDefinition Width="400"/>
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="lblBrdBreeds" Grid.Row="0" Grid.Column="1" Content="Breeds" HorizontalAlignment="Center" FontFamily="Calibri" FontSize="16" FontWeight="Bold"/>
+
+                        <Button x:Name="btnBrdAussie" Grid.Row="1" Grid.Column="1" Content="Aussiedoodle" Width="85" Height="30" Margin="0,0,190,0" VerticalAlignment="Top" Click="btnBrdAussie_Click" Background="#FFF4F2EC" />
+                        <Button x:Name="btnBrdGolden" Grid.Row="1" Grid.Column="1" Content="Goldendoodle" Width="85" Height="30" VerticalAlignment="Top" Click="btnBrdGolden_Click" Background="#FFF4F2EC" />
+                        <Button x:Name="btnBrdCockapoo" Grid.Row="1" Grid.Column="1" Content="Cockapoo" Width="85" Height="30" Margin="190,0,0,0" VerticalAlignment="Top" Click="btnBrdCockapoo_Click" Background="#FFF4F2EC" />
+
+                        <Rectangle Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3" Fill="#FF75BDA3" Margin="0,0,0,7" />
+                        <Label x:Name="lblBrdImage" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center"  FontFamily="Calibri" Foreground="White" FontSize="18" VerticalAlignment="Bottom" FontWeight="Bold"/>
+                        <Image x:Name="imgBrdImage" Grid.Row="3" Grid.Column="0" Width="300" Height="300" />
+                        <TextBlock x:Name="txbBrdAbout" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Padding="5, 0, 30, 30"  FontFamily="Calibri Light" Foreground="White" FontSize="16" VerticalAlignment="Center" LineHeight="18" Height="209"/>
+
+                        <Label x:Name="lblBrdList1" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" FontFamily="Calibri Light" FontSize="16" Height="30" VerticalAlignment="Top" Foreground="White"/>
+                        <Label x:Name="lblBrdList2" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" FontFamily="Calibri Light" FontSize="16" Height="30" VerticalAlignment="Top" Foreground="White" Margin="0,40,0,0"/>
+                        <Label x:Name="lblBrdList3" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" FontFamily="Calibri Light" FontSize="16" Height="30" VerticalAlignment="Top" Foreground="White" Margin="0,80,0,0" />
+                        <Label x:Name="lblBrdList4" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" FontFamily="Calibri Light" FontSize="16" Height="30" VerticalAlignment="Top" Foreground="White" Margin="0,120,0,0"/>
+                        <Label x:Name="lblBrdList5" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" FontFamily="Calibri Light" FontSize="16" Height="30" VerticalAlignment="Top" Foreground="White" Margin="0,160,0,0"/>
+
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabAdmin" Header="User Admin" FontFamily="Bahnschrift Light SemiCondensed" Loaded="tabAdmin_Loaded" >
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FFD7FFFE" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                    <Grid Grid.Row="6" Grid.ColumnSpan="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="84*"/>
+                            <ColumnDefinition Width="115*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="400"/>
+                        </Grid.RowDefinitions>
+                        <Button x:Name="btnAdmApplication" Grid.Row="0" Content="Applications" Click="btnAdmApplication_Click" Width="80" HorizontalAlignment="Left"/>
+                        <Button x:Name="btnAdmUser" Content="Users" Click="btnAdmUser_Click" Width="80" HorizontalAlignment="Left" Margin="90,0,0,0" Height="40" VerticalAlignment="Center"/>
+                        <Button x:Name="btnAdmAdoption" Content="Adoptions" Click="btnAdmAdoption_Click" Width="80" HorizontalAlignment="Left" Margin="180,0,0,0" Height="40" VerticalAlignment="Center"/>
+                        <Button x:Name="btnAdmTestimonial" Content="Testimonials" Click="btnAdmTestimonial_Click" Width="80" HorizontalAlignment="Left" Margin="270,0,0,0" Height="40" VerticalAlignment="Center"/>
+                        <Button x:Name="btnAdmLitter" Content="Litters" Click="btnAdmLitter_Click" Width="80" HorizontalAlignment="Left" Margin="360,0,0,0" Height="40" VerticalAlignment="Center"/>
+                        <Button x:Name="btnAdmPuppy" Content="Puppies" Click="btnAdmPuppy_Click" Width="80" HorizontalAlignment="Left" Margin="450,0,0,0" Height="40" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+
+
+                        <DataGrid Grid.Row="1" x:Name="grdApplications" SelectionMode="Single" IsReadOnly="True" MouseDoubleClick="grdApplications_MouseDoubleClick_1" Margin="0,0,0,20" Grid.ColumnSpan="2"/>
+                        <DataGrid Grid.Row="1" x:Name="grdUsers" SelectionMode="Single" IsReadOnly="True" Visibility="Hidden" MouseDoubleClick="grdUsers_MouseDoubleClick_1" Grid.ColumnSpan="2"/>
+                        <DataGrid Grid.Row="1" x:Name="grdAdoptions" SelectionMode="Single" IsReadOnly="True" Visibility="Hidden" MouseDoubleClick="grdAdoptions_MouseDoubleClick" Grid.ColumnSpan="2"/>
+                        <DataGrid Grid.Row="1" x:Name="grdTestimonials" SelectionMode="Single" IsReadOnly="True" Visibility="Hidden" MouseDoubleClick="grdTestimonials_MouseDoubleClick" Grid.ColumnSpan="2"/>
+                        <DataGrid Grid.Row="1" x:Name="grdLitters" SelectionMode="Single" IsReadOnly="True" Visibility="Hidden" MouseDoubleClick="grdLitters_MouseDoubleClick" Grid.ColumnSpan="2"/>
+                        <DataGrid Grid.Row="1" x:Name="grdPuppies" SelectionMode="Single" IsReadOnly="True" Visibility="Hidden" MouseDoubleClick="grdPuppies_MouseDoubleClick" Grid.ColumnSpan="2"/>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </StackPanel>
+
+        <StatusBar Grid.Row="5" Margin="0,10,0,0">
+            <StatusBarItem x:Name="statMessage" 
+                Content="Welcome. Please log in to continue"
+                Padding="20,0,0,0"/>
+        </StatusBar>
+    </Grid>
+</Window>

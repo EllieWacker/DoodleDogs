@@ -1,0 +1,58 @@
+﻿@model IEnumerable<DataDomain.Puppy>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<h1>Puppies</h1>
+
+<h4>You must fill out an Adoption Application to adopt a puppy.</h4>
+@if (ViewBag.IsAdopter == true)
+{
+    <a class="btn btn-sm btn-outline-primary" asp-area="" asp-controller="Adoption" asp-action="Details" asp-route-userID="@ViewBag.UserID">View your Puppies</a>
+}
+<div class="container py-4">
+    <div class="row g-4">
+        @foreach (var item in Model)
+        {
+            // responsive div
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                @* a bootstrap card div style *@
+                <div class="card h-100 shadow-sm">
+                    <img src="~/Photos/@item.Image" class="card-img-top" alt="Puppy Image" style="height: 230px; object-fit: cover;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Puppy #@item.PuppyID</h5>
+                        <p class="card-text"><strong>Litter:</strong> @item.LitterID</p>
+                        <p class="card-text"><strong>Gender:</strong> @item.Gender</p>
+                        <p class="card-text"><strong>Price:</strong> $@item.Price</p>
+                        <p class="card-text">
+                            <strong>Status:</strong>
+                            @* Two turnary operators to determine the style and text of the badge *@
+                            <span class="badge @(item.Adopted ? "bg-success" : "bg-warning")">
+                                @(item.Adopted ? "Adopted" : "Available")
+                            </span>
+                        </p>
+                    </div>
+
+                   
+                    <div class="card-footer text-center">
+                    @if (item.Adopted == false && ViewBag.CanAdopt == true)
+                    {
+                            <a asp-action="Adopt" asp-route-puppyID="@item.PuppyID" asp-route-medicalRecordID="@item.MedicalRecordID" asp-route-userID="@ViewBag.UserID" class="btn btn-sm btn-outline-success">Adopt</a>
+                    }
+                        <a asp-action="Details" asp-route-puppyID="@item.PuppyID" asp-route-medicalRecordID="@item.MedicalRecordID" class="btn btn-sm btn-outline-info">Details</a>
+                    </div>
+                    
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

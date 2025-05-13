@@ -1,0 +1,109 @@
+﻿@model DataDomain.Application
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/application.css" asp-append-version="true" />
+}
+
+<h1>Create</h1>
+
+<h4>Application</h4>
+<hr />
+<form asp-action="Create" class="create">
+    @if (ViewBag.SuccessMessage != null)
+    {
+        <div class="alert alert-success">
+            @ViewBag.SuccessMessage
+        </div>
+    }
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="UserID" value="10000"/>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label">Full Name</label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Age" class="control-label"></label>
+                <input asp-for="Age" class="form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="DesiredBreed" class="control-label">Desired Breed</label>
+                @Html.DropDownListFor(m => m.DesiredBreed,
+                         new SelectList(ViewBag.BreedOptions),
+                         new { @class = "form-control" })
+                <span asp-validation-for="DesiredBreed" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="DesiredGender" class="control-label">Desired Gender</label>
+                @Html.DropDownListFor(m => m.DesiredGender,
+                         new SelectList(ViewBag.GenderOptions),
+                         new { @class = "form-control" })
+                <span asp-validation-for="DesiredGender" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="PreferredContact" class="control-label">Preferred Contact</label>
+                @Html.DropDownListFor(m => m.PreferredContact,
+                         new SelectList(ViewBag.ContactOptions),
+                         new { @class = "form-control" })
+                <span asp-validation-for="PreferredContact" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Comment" class="control-label"></label>
+                <input asp-for="Comment" class="form-control"/>
+                <span asp-validation-for="Comment" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Renting" /> @Html.DisplayNameFor(model => model.Renting)
+                </label>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Yard" /> @Html.DisplayNameFor(model => model.Yard)
+                </label>
+            </div>
+        </div>
+    </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,128 @@
+﻿@model DataDomain.Puppy
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/create.css" asp-append-version="true" />
+}
+
+<h1>Edit</h1>
+
+<h4>Puppy</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PuppyID" />
+            <div class="row">
+                <div class="div col-md-4">
+                    <div class="form-group">
+                        <label asp-for="BreedID" class="control-label">Breed</label>
+                        @Html.DropDownListFor(m => m.BreedID,
+                                          new SelectList(ViewBag.BreedIDs),
+                                          new { @class = "form-control" })
+                        <span asp-validation-for="BreedID" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="div col-md-4">
+                    <div class="form-group">
+                        <label asp-for="LitterID" class="control-label">Litter</label>
+                        @Html.DropDownListFor(m => m.LitterID,
+                                          new SelectList(ViewBag.LitterIDs),
+                                          new { @class = "form-control" })
+                        <span asp-validation-for="LitterID" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="div col-md-4">
+                    <div class="form-group">
+                        <label asp-for="MedicalRecordID" class="control-label">Medical Record</label>
+                        @Html.DropDownListFor(m => m.MedicalRecordID,
+                                          new SelectList(ViewBag.MedicalRecordIDs),
+                                          new { @class = "form-control" })
+                        <span asp-validation-for="MedicalRecordID" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="align-items: center;">
+                @* Shows the current image and saves it as a hidden input if there is one *@
+                @if (!string.IsNullOrEmpty(Model.Image))
+                {
+                    <input type="hidden" asp-for="Image" />
+                    <div class="col-md-4">
+                        <label>Current Image:</label>
+                        <div>
+                            <img id="imagePreview" src="~/Photos/@Model.Image" alt="Current Puppy Image" style="max-height: 8em;" />
+                        </div>
+                    </div>
+                }
+
+                <div class="div col-md-4">
+                    <div class="form-group">
+                        <label asp-for="Gender" class="control-label"></label>
+                        @Html.DropDownListFor(m => m.Gender,
+                                 new SelectList(ViewBag.Genders),
+                                 new { @class = "form-control" })
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="div col-md-4">
+                    <div class="form-group">
+                        <label asp-for="Price" class="control-label"></label>
+                        <input asp-for="Price" class="form-control" />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 1em;">
+                @* The optional upload image input. It gets the same validation messages as Image *@
+                <div class="div col-md-4">
+                    <div class="form-group">
+                        <label for="NewImage" class="control-label">Upload New Image (optional)</label>
+                        <input type="file" name="NewImage" id="NewImage" class="form-control" accept="image/*" />
+                        <span class="text-danger">@Html.ValidationMessage("Image")</span>
+                    </div>
+                </div>
+                <div class="div col-md-4">
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="Adopted" /> @Html.DisplayNameFor(model => model.Adopted)
+                        </label>
+                    </div>
+                </div>
+                <div class="div col-md-4">
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="Microchip" /> @Html.DisplayNameFor(model => model.Microchip)
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-sm btn-outline-success" />
+                <a asp-action="IndexBasic" class="btn btn-sm btn-outline-primary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // gets the NewImage and gives it a onchange event
+        document.getElementById("NewImage").addEventListener("change", function (event) {
+            // gets the file that the user selected
+            const [file] = event.target.files;
+            // if there is a file have the imagePreview display that image instead
+            if (file) {
+                const preview = document.getElementById("imagePreview");
+                // displays the selected image using createObjectURL(which makes a temporary url for the src to reference)
+                preview.src = URL.createObjectURL(file);
+                preview.style.display = "block";
+            }
+        });
+    </script>
+
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

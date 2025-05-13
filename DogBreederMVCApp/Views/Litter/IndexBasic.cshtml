@@ -1,0 +1,93 @@
+﻿@model IEnumerable<DataDomain.Litter>
+
+@{
+    ViewData["Title"] = "IndexBasic";
+}
+@{
+    var successMessage = TempData["SuccessMessage"] as string;
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/tableStyles.css" asp-append-version="true" />
+}
+
+<h1>All Litters</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-sm btn-outline-success">Create New</a>
+</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr class="grayTr">
+                <th>
+                    Litter
+                </th>
+                <th>
+                    Father Dog
+                </th>
+                <th>
+                    Mother Dog
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Image)
+                </th>
+                <th>
+                    Date Of Birth
+                </th>
+                <th>
+                    Go Home Date
+                </th>
+                <th>
+                   Number of Puppies
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LitterID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FatherDogID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MotherDogID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Image)
+                </td>
+                <td>
+                     @item.DateOfBirth.ToString("yyyy-MM-dd")
+                </td>
+                <td>
+                     @item.GoHomeDate.ToString("yyyy-MM-dd")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumberPuppies)
+                </td>
+                <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.LitterID }, new { @class = "btn btn-sm btn-outline-warning" })
+                        @Html.ActionLink("Details", "Details", new { litterID = item.LitterID, fatherDogID = item.FatherDogID, motherDogID = item.MotherDogID }, new { @class = "btn btn-sm btn-outline-info" })
+                        @Html.ActionLink("Delete", "Delete", new { litterID = item.LitterID, fatherDogID = item.FatherDogID, motherDogID = item.MotherDogID }, new { @class = "btn btn-sm btn-outline-danger" })
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,99 @@
+﻿@model IEnumerable<DataDomain.Puppy>
+
+@{
+    ViewData["Title"] = "IndexBasic";
+}
+@{
+    var successMessage = TempData["SuccessMessage"] as string;
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/tableStyles.css" asp-append-version="true" />
+}
+
+<h1>All Puppies</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-sm btn-outline-success">Create New</a>
+</p>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr class="grayTr">
+                <th>
+                    Puppy Number
+                </th>
+                <th>
+                    Breed
+                </th>
+                <th>
+                    Litter
+                </th>
+                <th>
+                    Medical Record
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Gender)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Adopted)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Microchip)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PuppyID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BreedID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LitterID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MedicalRecordID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Adopted)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Microchip)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.PuppyID }, new { @class = "btn btn-sm btn-outline-warning" })
+                        @Html.ActionLink("Details", "Details", new { puppyID = item.PuppyID, medicalRecordID = item.MedicalRecordID }, new { @class = "btn btn-sm btn-outline-info" })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.PuppyID }, new { @class = "btn btn-sm btn-outline-danger" })
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>
